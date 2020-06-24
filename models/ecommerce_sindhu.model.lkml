@@ -2,7 +2,7 @@ connection: "thelook"
 
 # include all the views
 include: "/views/**/*.view"
-include: "//exchange_rate_block_test/*.view"
+# include: "//exchange_rate_block_test/*.view"
 
 datagroup: ecommerce_sindhu_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
