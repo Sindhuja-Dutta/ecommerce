@@ -96,5 +96,3 @@ explore: user_data {
 }
 
 explore: users {}
-
-explore: xin_test_for_bug2 {}
