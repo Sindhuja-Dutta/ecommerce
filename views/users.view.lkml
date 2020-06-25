@@ -7,6 +7,7 @@ view: users {
     type: number
     sql: ${TABLE}.id ;;
     tags: ["user_id"]
+#     html: {{ rendered_value }} || {{ users.first_name._value }} || {{ users.email._rendered_value}} ;;
   }
 
   dimension: age {
@@ -33,6 +34,11 @@ view: users {
   dimension: test_null {
   type: number
   sql: CASE WHEN ${age}<0 then 1 else null end ;;
+  }
+
+  dimension: coalesce_test {
+    type: number
+    sql: coalesce(${test_null},0) ;;
   }
 
   dimension_group: created {
@@ -83,6 +89,7 @@ view: users {
   measure: count {
     type: count
     drill_fields: [detail*]
+#     html: {{ rendered_value }} || {{ users.first_name._value }} || {{ users.email._rendered_value}} ;;
   }
 
   # ----- Sets of fields for drilling ------
