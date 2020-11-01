@@ -1,5 +1,5 @@
 connection: "thelook"
-
+#comment
 # include all the views
 include: "/views/**/*.view"
 # include: "//exchange_rate_block_test/*.view"

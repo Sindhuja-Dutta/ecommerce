@@ -1,7 +1,7 @@
 view: orders {
   sql_table_name: looker-test-db.looker_test.orders ;;
   drill_fields: [id]
-
+#comment
   dimension: id {
     primary_key: yes
     type: number
