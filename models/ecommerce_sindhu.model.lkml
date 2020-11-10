@@ -10,7 +10,7 @@ datagroup: ecommerce_sindhu_default_datagroup {
 }
 
 persist_with: ecommerce_sindhu_default_datagroup
-
+#
 explore: connection_reg_r3 {}
 
 explore: events {
